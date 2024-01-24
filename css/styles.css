@@ -22,8 +22,8 @@ body {
 
   /* This is how the list will change when we hover */
   .navbar-nav li a:hover {  
-    color: black;  
-    background-color: white;  
+    color: rgb(255, 255, 255);  
+    background-color: rgb(0, 0, 0);  
     font-weight: bold;
   
   }
