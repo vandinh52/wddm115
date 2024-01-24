@@ -1,9 +1,9 @@
 body {
-    background-color: rgb(5, 5, 5);
+    background-color: rgb(255, 255, 255);
 }
 
 #content {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 /* list-style-type: none to remove the bullet, overflow: hidden to remove the scroll */
