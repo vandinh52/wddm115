@@ -1,0 +1,108 @@
+body {
+    background-color: black;
+}
+
+#content {
+    color: white;
+}
+
+/* list-style-type: none to remove the bullet, overflow: hidden to remove the scroll */
+.navbar-nav{
+    list-style-type: none;  
+    margin: 0;  
+    padding: 0;
+    overflow: hidden
+  }
+  
+  .navbar-nav li{
+    float: left;
+      text-align: center;
+      
+  }
+
+  /* This is how the list will change when we hover */
+  .navbar-nav li a:hover {  
+    color: black;  
+    background-color: white;  
+    font-weight: bold;
+  
+  }
+
+  /* This is how the list display without hovering */
+  .navbar li a{
+
+    display: block;
+    padding: 8px;
+    width: 200px;
+    background: black;
+    color:white;
+    text-decoration: none;
+  }
+  
+  .navbar{
+    margin-top : 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+  }
+
+  /* Using Google Fonts, learnt how to embed through Google Fonts */
+  h1 {
+    font-size: 64px;
+    margin: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+  }
+
+  h2 {
+    font-size: 36px;
+    margin:8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+  }
+
+  h3{
+
+    font-size: 24px;
+    margin:8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+  }
+
+ p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    font-style: normal;
+ }
+
+img{
+    padding-top: 8px;
+}
+
+  #content2 {
+    padding-top: 64px;
+    color: white;
+    width: 800px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+      
+  }
+
+  #content3 {
+    padding-top: 8px;
+    width: 1000px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;800&display=swap');
+
+
+
+
+
+
