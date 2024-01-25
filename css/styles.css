@@ -10,39 +10,36 @@ body {
 /* list-style-type: none to remove the bullet, overflow: hidden to remove the scroll */
 .navbar-nav{
     list-style-type: none;
-    overflow: hidden;
-  }
+    display: flex;
+}
   
-  .navbar-nav li{
-    float: left;
-      text-align: center;
-      
-  }
+.navbar-nav li {
+    
+}
 
-  /* This is how the list will change when we hover */
-  .navbar-nav li a:hover {  
-    color: rgb(255, 255, 255);  
-    background-color: rgb(0, 0, 0);  
-    font-weight: bold;
-  
-  }
+/* This is how the list will change when we hover */
+.navbar-nav li a:hover, .active {  
+  color: rgb(255, 255, 255);  
+  background-color: rgb(0, 0, 0);  
+  font-weight: bold;
+}
 
-  /* This is how the list display without hovering */
-  .navbar li a{
-
-    display: block;
-    padding: 8px;
-    width: 200px;
-    background: rgb(255, 255, 255);
-    color:rgb(0, 0, 0);
-    text-decoration: none;
-  }
+/* This is how the list display without hovering */
+.navbar li a{
+  display: block;
+  padding: 8px;
+  background: rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
+  text-decoration: none;
+}
   
   .navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     margin-top : 50px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 24px;
-    margin: auto;
   }
 
   /* Using Google Fonts, learnt how to embed through Google Fonts */
