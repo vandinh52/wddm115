@@ -19,11 +19,60 @@ body {
   color: var(--light);
 }
 
-#mode-switch {
+/* dark and light mode toggle switch */
+#toggle-switch {
+  position: relative;
+  width: 50px;
+  float: right;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+#toggle-label {
   position: absolute;
-  right: 0;
-  top: 0;
-  padding: 20px;
+  width: 100%;
+  height: 25px;
+  background-color: var(--dark);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#toggle-check {
+  position: absolute;
+  display: none;
+}
+
+#toggle-span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+/* the ~ is a sibling combinator */
+/* if the radio button is checked */
+#toggle-check:checked ~ #toggle-span {
+  background-color: var(--light);
+}
+
+#toggle-span::before {
+  content: "";
+  position: absolute;
+  top: 3.25px;
+  left: 4px;
+  width: 18.75px;
+  height: 18.75px;
+  border-radius: 50%;
+  box-shadow: inset 7px -1px 0px 0px var(--light);
+  background-color: var(--dark);
+  transition: 0.3s;
+}
+
+#toggle-check:checked ~ #toggle-span::before {
+  transform: translate(23.75px);
+  background-color: var(--dark);
+  box-shadow: none;
 }
 
 #content {
