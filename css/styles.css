@@ -21,6 +21,7 @@ body {
 
 .wrapper {
   max-width: 1024px;
+  margin-inline: auto;
 }
 
 /* dark and light mode toggle switch */
@@ -149,7 +150,9 @@ p {
 }
 
 img {
-  padding-top: 8px;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 #content2 {
