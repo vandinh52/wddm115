@@ -19,11 +19,6 @@ body {
   color: var(--light);
 }
 
-.wrapper {
-  max-width: 1024px;
-  margin-inline: auto;
-}
-
 /* dark and light mode toggle switch */
 #toggle-switch {
   position: relative;
@@ -85,11 +80,19 @@ body {
 }
 
 /* list-style-type: none to remove the bullet, overflow: hidden to remove the scroll */
-.navbar-nav {
-  width: 100%;
-  list-style-type: none;
-  display: flex;
-  justify-content: space-evenly;
+
+@media (width >= 1024px) {
+  .navbar-nav {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .wrapper {
+    max-width: 1024px;
+    margin-inline: auto;
+  }
 }
 
 /* This is how the list will change when we hover */
@@ -157,7 +160,6 @@ img {
 
 #content2 {
   padding-top: 64px;
-  width: 800px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -165,7 +167,6 @@ img {
 
 #content3 {
   padding-top: 8px;
-  width: 1000px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
