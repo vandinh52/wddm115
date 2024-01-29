@@ -19,6 +19,10 @@ body {
   color: var(--light);
 }
 
+.wrapper {
+  max-width: 1024px;
+}
+
 /* dark and light mode toggle switch */
 #toggle-switch {
   position: relative;
